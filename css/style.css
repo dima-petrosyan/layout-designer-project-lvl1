@@ -51,6 +51,10 @@ h3 {
 	font-size: 34px;
 }
 
+h4 {
+    font-size: 24px;
+}
+
 section {
     margin-left: auto;
     margin-right: auto;
@@ -73,11 +77,10 @@ span {
     top: 0;
     left: 0;
     width: 100%;
-    height: auto;
+    height: 100%;
     object-fit: cover;
     opacity: 0.9;
     z-index: -2;
-    background-color: var(--light);
 }
 
 .container {
@@ -203,13 +206,99 @@ span {
     font-size: 34px;
 }
 
+/*IKEA EFFECT*/
 
+.content {
+    display: flex;
+    justify-content: space-between;
+}
 
+.description {
+    margin-top: 30px;
+}
 
+.description-subtitle {
+    margin-top: 70px;
+    text-transform: uppercase;
+    padding: 5px 10px;
+}
 
+.subtitle-text {
+    column-count: 2;
+    column-gap: 30px;
+    column-width: 540px;
+    margin-top: 20px;
+}
 
+/*Section light*/
 
+.section-light {
+    position: relative;
+}
 
+.section-light h1 {
+    font-size: 55px;
+}
 
+.section-light h4 {
+    color: var(--dark-with-opacity);
+}
+
+.section-light h3 {
+    margin-top: 30px;
+}
+
+.section-light .image {
+    margin-left: -30px;
+}
+
+.section-light .description-subtitle {
+    color: #fff;
+    background-color: var(--brown);
+}
+
+.section-light .background-image {
+    background-color: var(--light);
+}
+
+/*Section dark*/
+
+.section-dark {
+    position: relative;
+}
+
+.section-dark h1 {
+    font-size: 60px;
+}
+
+.section-dark h4 {
+    color: var(--white-with-opacity);
+}
+
+.section-dark h1 {
+    color: #fff;
+}
+
+.section-dark h3 {
+    color: #fff;
+    margin-top: 30px;
+}
+
+.section-dark .image {
+    margin-right: -30px;
+}
+
+.section-dark .description-subtitle {
+    color: var(--brown);
+    background-color: #fff;
+}
+
+.section-dark p {
+    color: #fff;
+}
+
+.section-dark .background-image {
+    background-color: var(--brown);
+}
 
 
