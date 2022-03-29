@@ -28,6 +28,11 @@ body {
     margin: 0;
 }
 
+a {
+    text-decoration: none;
+    color: var(--white);
+}
+
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Neucha', sans-serif;
 	line-height: 1.2em;
@@ -64,6 +69,7 @@ section {
     width: 100%;
     height: auto;
     object-fit: cover;
+    opacity: 0.9;
     z-index: -2;
 }
 
@@ -98,6 +104,28 @@ section {
     z-index: -1;
 }
 
+.header-text {
+    margin-top: 195px;
+    column-count: 2;
+    column-gap: 30px;
+    column-width: 540px;
+}
+
+.header-text p:last-child {
+    margin-top: 10px;
+}
+
+.header .container a {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.header .container a {
+    display: inline-block;
+    background-color: var(--base);
+    padding: 12px 24px;
+    margin: 40px 0px 0px 570px;
+}
 
 
 
