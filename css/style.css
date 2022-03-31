@@ -28,11 +28,6 @@ body {
     margin: 0;
 }
 
-a {
-    text-decoration: none;
-    color: var(--white);
-}
-
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Neucha', sans-serif;
 	line-height: 1.2em;
@@ -72,6 +67,11 @@ span {
     position: relative;
 }
 
+.header-link {
+    text-decoration: none;
+    color: var(--white);
+}
+
 .background-image {
     position: absolute;
     top: 0;
@@ -84,7 +84,7 @@ span {
 }
 
 .container {
-    max-width: 1110px;
+    width: 1110px;
     height: auto;
     margin-left: auto;
     margin-right: auto;
@@ -226,7 +226,6 @@ span {
 .subtitle-text {
     column-count: 2;
     column-gap: 30px;
-    column-width: 540px;
     margin-top: 20px;
 }
 
@@ -300,5 +299,117 @@ span {
 .section-dark .background-image {
     background-color: var(--brown);
 }
+
+/*FOOTER*/
+
+.footer {
+    height: 580px;
+}
+
+.footer .container {
+    display: flex;
+    flex-direction: column;
+}
+
+.subscribe-content {
+    background-color: var(--base-dark);
+    height: 190px;
+}
+
+.footer a {
+    color: var(--blue);
+}
+
+.footer-extra-info {
+    margin-top: 76px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-extra-info * + * {
+    margin-top: 16px;
+}
+
+.subscribe-content {
+    padding: 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.subscribe-content h3 {
+    color: var(--white);
+}
+
+.form-content {
+    color: var(--white);
+}
+
+.form-content p {
+    font-size: 18px;
+}
+
+.form-content p:nth-of-type(even) {
+    font-size: 12px;
+}
+
+input {
+    margin-top: 9px;
+    height: 50px;
+    width: 485px;
+    padding-left: 15px;
+    font: 400 13px 'Open Sans';
+    color: #757575;
+}
+
+form {
+    position: relative;
+}
+
+form::before {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 70px;
+    height: 50px;
+    top: 9px;
+    right: 0;
+    background-color: var(--base);
+    cursor: pointer;
+}
+
+form::after {
+    position: absolute;
+    content: url(../img/send.svg);
+    right: 25px;
+    top: 20px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
